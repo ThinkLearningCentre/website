@@ -1,0 +1,830 @@
+/*COLOURS
+
+orange: #ff8000; 255, 128, 0
+green: #366753; 54,103,83
+dark-green:3f6941; 63, 105, 65
+nav-dark-gray: #444; 
+background-light-gray: #ccc;
+blue: #1533AD; 21, 51, 173
+
+*/
+
+html{
+	font-family: 'Oswald', sans-serif;
+}
+a{
+	color: #1533AD;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+	width: 100%;
+	overflow-y:scroll;
+}
+
+.hover_main{
+	background-color: #366753;
+}
+
+
+/*=================TOP NAV BAR===============*/
+.top_bar{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #444;
+	float: left;
+	position:relative;
+}
+
+.top_bar img{
+	padding: inherit;
+	margin: inherit;
+	width: 100%;
+}
+
+
+
+/*===========================CONTENT===================================*/
+.post{
+	background-color: white;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding-right: 40px;
+	padding-left:40px;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.post h3{
+	text-align:center;
+}
+.post p{
+	text-align:justify;
+}
+
+.post img{
+	width:100%;
+}
+
+/*==================================FOOTER============================*/
+.footer{
+	float: right;
+	background-color: #366753;
+	width: 100%;
+	margin-top:10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.fpost a{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	
+}
+.fpost{
+	height: 80px;
+	position: relative;
+	background-color: #366753;
+}
+.fpost img{
+	position: absolute;
+	bottom: 3px;
+	left: 3px;
+	width: 97%;
+}
+
+
+
+/*=====================Adjastments for very small mobile screens=======================*/
+@media screen and (max-width:725px) {
+	.aboutdesktop{
+		display: none;
+	}
+	.nav_curriculum_active_computers{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_computers ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_computers li {
+		font-size: 1.2em;
+		width: 50%;
+		border-bottom: none;
+		height: auto;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px
+	}
+	 
+	.nav_curriculum_active_computers a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_computers a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_computers a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_french{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_french ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_french li {
+		font-size: 1.2em;
+		width: 50%;
+		border-bottom: none;
+		height: auto;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px
+	}
+	 
+	.nav_curriculum_active_french a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_french a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_french a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_english{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_english ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_english li {
+		font-size: 1.2em;
+		width: 50%;
+		border-bottom: none;
+		height: auto;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px
+	}
+	 
+	.nav_curriculum_active_english a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_english a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_english a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active{
+		width: 100%;
+		background-color: #ff8000;
+	}
+	.nav_curriculum_active ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active li {
+		font-size: 1.2em;
+		width: 25%;
+		border-bottom: none;
+		height: auto;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active a {
+		text-decoration: none;
+		color: #222;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active a:hover {
+	  text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active a.active {
+	  background-color: #366753;
+	  color: white;
+	  cursor: default;
+	  text-decoration: underline;
+	}	
+	.nav_curriculum{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum ul {
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum li {
+		font-size: 1.2em;
+		width: 50%;
+		border-bottom: none;
+		height: auto;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	 
+	.nav_curriculum a:hover {
+	  background-color: #444;
+	}
+	 
+	.nav_curriculum a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+
+	.nav ul {
+		list-style: none;
+		background-color: #444;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav li {
+		font-size: 1.3em;
+		width: 50%;
+		border-bottom: none;
+		height: auto;
+		line-height: 30px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	 
+	.nav a:hover {
+	  background-color: #366753;
+	}
+	 
+	.nav a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+	.page{
+		width: auto;
+		padding: 0;
+	}
+	.fpost{
+		width: 15.66%;
+		float: left;
+		padding: .4%;
+		margin: .1%;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	.social img{
+		width: 25px;
+	}
+}
+/*=====================Adjastments for mobile screens=======================*/
+@media screen and (max-width: 1097px) and (min-width: 725px) { 
+	.aboutdesktop{
+		display: none;
+	}
+	.nav_curriculum_active_computers{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_computers ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_computers li {
+		font-size: 1.1em;
+		width: 30%;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+	}
+	 
+	.nav_curriculum_active_computers a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_computers a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_computers a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_french{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_french ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_french li {
+		font-size: 1.1em;
+		width: 15%;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+	}
+	 
+	.nav_curriculum_active_french a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_french a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_french a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_english{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_english ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_english li {
+		font-size: 0.812em;
+		width: 8%;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+	}
+	 
+	.nav_curriculum_active_english a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_english a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_english a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active{
+		width: 100%;
+		background-color: #ff8000;
+	}
+	.nav_curriculum_active ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active li {
+		font-size: 1.2em;
+		width: 20%;
+		border-bottom: none;
+		height: 30px;
+		line-height: 30px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active a {
+		text-decoration: none;
+		color: #222;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active a:hover {
+	  text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active a.active {
+	  background-color: #366753;
+	  color: white;
+	  cursor: default;
+	  text-decoration: underline;
+	}	
+	.nav_curriculum{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum ul {
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.nav_curriculum li {
+		font-size: 1.2em;
+		line-height: 40px;
+		width: 14.2%;
+		border-bottom: none;
+		height: 40px;
+		display: inline-block;
+		margin-right: -4px;
+		padding: 0;
+	}
+	 
+	.nav_curriculum a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	 
+	.nav_curriculum a:hover {
+	  text-decoration: underline;
+	}
+	 
+	.nav_curriculum a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+	.nav ul {
+		list-style: none;
+		background-color: #444;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.nav li {
+		font-size: 1.3em;
+		width: 14.2%;
+		border-bottom: none;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+		margin-right: -4px;
+		padding: 0;
+	}
+	 
+	.nav a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	 
+	.nav a:hover {
+	  background-color: #366753;
+	}
+	 
+	.nav a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+	.page{
+		width: 98%;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0px;
+	}
+	.fpost{
+		width: 15.66%;
+		float: left;
+		padding: .4%;
+		margin: .1%;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	.social img{
+		width: 40px;
+	}
+}
+/*======================Adjastments for Desktop Screens=======================*/
+@media screen and (min-width: 1097px) {
+	.aboutmobile{
+		display: none;
+	}
+	.nav-fixed{
+		position:fixed;
+		top:0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		z-index: 4;
+	}
+	.margin_top{
+		margin-top: 110px;
+	}
+	.nav_curriculum_active_computers{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_computers ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_computers li {
+		font-size: 1.1em;
+		width: 180px;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active_computers a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_computers a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_computers a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_french{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_french ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_french li {
+		font-size: 1.1em;
+		width: 180px;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active_french a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_french a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_french a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active_english{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum_active_english ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav_curriculum_active_english li {
+		font-size: 1.1em;
+		width: 95px;
+		border-bottom: none;
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active_english a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active_english a:hover {
+	  	text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active_english a.active {
+	  	text-decoration: underline;
+	  	cursor: default;
+	}
+	.nav_curriculum_active{
+		width: 100%;
+		background-color: #ff8000;
+	}
+	.nav_curriculum_active ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-left: 150px;
+	}
+
+	.nav_curriculum_active li {
+		font-size: 1.2em;
+		width: 120px;
+		border-bottom: none;
+		height: 30px;
+		line-height: 30px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum_active a {
+		text-decoration: none;
+		color: #222;
+		display: block;
+		text-align: center;
+	}
+	 
+	.nav_curriculum_active a:hover {
+	  text-decoration: underline;
+	}
+	 
+	.nav_curriculum_active a.active {
+	  background-color: #366753;
+	  color: white;
+	  cursor: default;
+	  text-decoration: underline;
+	}	
+	.nav_curriculum{
+		width: 100%;
+		background-color: #366753;
+	}
+	.nav_curriculum ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-left: 150px;
+	}
+
+	.nav_curriculum li {
+		font-size: 1.2em;
+		width: 120px;
+		border-bottom: none;
+		height: 30px;
+		line-height: 30px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav_curriculum a {
+		text-decoration: none;
+		color: white;
+		display: block;
+	}
+	 
+	.nav_curriculum a:hover {
+	  text-decoration: underline;
+	}
+	 
+	.nav_curriculum a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+
+	.nav ul {
+		list-style: none;
+		background-color: #444;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav li {
+		font-size: 1.3em;
+		width: 154.28px;
+		border-bottom: none;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+		margin-right: -4px;
+	}
+	 
+	.nav a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	 
+	.nav a:hover {
+	  background-color: #366753;
+	}
+	 
+	.nav a.active {
+	  background-color: #ff8000;
+	  color: #444;
+	  cursor: default;
+	}
+	.page{
+		width: 1080px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0;
+	}
+	.size{
+		width: 1080px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0;
+	}
+	.fpost{
+		width: 172px;
+		float: left;
+		padding: 0;
+		margin: 4px;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	.social img{
+		width: 40px;
+	}
+}
+
+.social{
+	position:absolute; 
+	right:0px;
+	bottom:0px;
+	z-index: 2;
+}

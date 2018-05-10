@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Think</title>
+    <link rel="shortcut icon" href="src/Think.ico" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+    $(function() {
+        $('.start_hide').hide();
+    });
+
+    function slide(x) {
+        if ($("#" + x).is(":hidden")) {
+            $(".reg").slideUp("slow");
+            $("button").removeClass("button_active");
+            $("#" + x).delay(100).slideDown("slow");
+        } else {
+            $("#" + x).slideUp("slow");
+        }
+    }
+    </script>
+    <style type="text/css">
+    .buttons {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        width: 11%;
+        height: 40px;
+        border: 0 none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 1.3;
+        font-size: 1.1em;
+        color: black;
+        text-transform: none;
+        font-weight: 500;
+        transition: all 60ms ease-in-out;
+        background-color: #4E7E6B;
+    }
+    
+    button:hover {
+        text-decoration: underline;
+    }
+    
+    .button_active {
+        background-color: #ff8000;
+    }
+    /*===OVERIDE POST===*/
+    
+    .page {
+        margin-top: 0;
+    }
+    
+    .section {
+        margin-top: 0;
+    }
+    
+    @media screen and (max-width:700px) {
+        .post1 {
+            width: 90%;
+            padding: 3%;
+        }
+        .post2 {
+            width: 90%;
+            padding: 3%;
+            margin: 2%;
+        }
+    }
+    
+    @media screen and (max-width: 1097px) and (min-width: 700px) {
+        .post1 {
+            float: left;
+            width: 70%;
+            padding: 3%;
+        }
+        .post2 {
+            float: right;
+            width: 20%;
+            margin-left: 2%;
+            padding: 1%;
+        }
+    }
+    
+    @media screen and (min-width: 1097px) {
+        .post1 {
+            width: 700px;
+            margin-left: 0;
+            float: left;
+        }
+        .post2 {
+            width: 200px;
+            float: right;
+            margin-bottom: 10px;
+        }
+        .home_fix {
+            margin-bottom: 10px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!--====================HEADER===================-->
+    <header>
+        <div class="top_bar">
+            <img src="src/think_header.jpg">
+            <a href="home.html" title=""><img style="position:absolute; left:2%; top:10%; z-index: 2; width:15%;" src="src/THINK-Logo-Vector-Animated.gif"></a>
+            <div class="social">
+                <a href="https://www.facebook.com/ThinkLearningCentre" target="_blank"><img src="src/social/facebook.png"></a>
+                <a href="https://twitter.com/ThinkLC" target="_blank"><img src="src/social/twitter.png"></a>
+                <a href="https://www.linkedin.com/company/ans-gnosis-ltd" target="_blank"><img src="src/social/linkedin.png"></a>
+            </div>
+        </div>
+        <div id="nav_stay">
+            <div id="home_fix">
+                <div id="nav_margin">
+                    <div class="nav" id="nav_main">
+                        <ul>
+                            <li id="nav_main_1"><a class="active" href="home.html" title="">Home</a></li>
+                            <li id="nav_main_2"><a href="aboutus.html" title="">About Us</a></li>
+                            <li id="nav_main_3"><a href="curriculum.html" title="">Curriculum</a></li>
+                            <li id="nav_main_4"><a href="exams.html" title="">Exams</a></li>
+                            <li id="nav_main_5"><a href="calendar.html" title="">Calendar</a></li>
+                            <li id="nav_main_6"><a href="gallery.html" title="">Gallery</a></li>
+                            <li id="nav_main_7"><a href="contactus.html" title="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_curriculum" id="nav_curriculum">
+                        <div class="size">
+                            <ul>
+                                <li id="nav_curriculum_1"><a href="curriculum/english.html" title="">English</a></li>
+                                <li id="nav_curriculum_2"><a href="curriculum/french.html" title="">French</a></li>
+                                <li id="nav_curriculum_3"><a href="curriculum/computers.html" title="">Computers</a></li>
+                                <li id="nav_curriculum_4"><a href="curriculum/private.html" title="">Private</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_curriculum" id="nav_exams">
+                        <div class="size">
+                            <ul style="text-align:center; margin-left:0;">
+                                <li><a href="Exams/registration.html" title="">Registration</a></li>
+                                <li><a href="Exams/preparation.html" title="">Preparation</a></li>
+                                <li><a href="Exams/results.html" title="">Results</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=================BODY========================-->
+    <div class="page">
+        <div class="post post1">
+            <h1>Νέα και δραστηριότητες</h1>
+        </div>
+        <div class="post post2">
+            <a href="home.html" style="text-decoration: none; color: black; text-decoration:none">
+                <img src="src/home-icon.jpg" width="100%">
+                <h1 style="text-align:center;">Home</h1>
+            </a>
+        </div>
+        <div class="post post1">
+            <div class="buttons">
+                <h2>Συνάντηση για βαθμούς τριμήνου</h2>
+                <button onclick='slide("Anthi");$(this).toggleClass("button_active")'>Anthi</button>
+                <button onclick='slide("Aliki");$(this).toggleClass("button_active")'>Aliki</button>
+                <button onclick='slide("Nick");$(this).toggleClass("button_active")'>Nick</button>
+                <button onclick='slide("Soteria");$(this).toggleClass("button_active")'>Soteria</button>
+                <button onclick='slide("Despina");$(this).toggleClass("button_active")'>Despina</button>
+                <button onclick='slide("Styliana");$(this).toggleClass("button_active")'>Styliana</button>
+                <button onclick='slide("Simona");$(this).toggleClass("button_active")'>Simona</button>
+                <button onclick='slide("Vicki");$(this).toggleClass("button_active")'>Vicki</button>
+            </div>
+            <!--Form for ANTHI-->
+            <div class="reg start_hide" id='Anthi'>
+                <iframe src="https://docs.google.com/forms/d/1ngScpKq5AZwZiD5Es3_JRdGBE0RtAsRVNJ41qvmgwvU/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for ALIKI-->
+            <div class="reg start_hide" id='Aliki'>
+                <iframe src="https://docs.google.com/forms/d/19S9JeamlmbnGx50vBts2nKuT75B5VU3KraPSaCRzpWk/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for NICK-->
+            <div class="reg start_hide" id='Nick'>
+                <iframe src="https://docs.google.com/forms/d/1SPjdf-Zk2EcEcKcfKbXVhSeTizUJYH8UupnWqn8AGR4/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for Soteria-->
+            <div class="reg start_hide" id='Soteria'>
+                <iframe src="https://docs.google.com/forms/d/1vqx2Yvn8jJm-mvzly_BXKDkJ6Jb5Qujt_CCQl_TsQ08/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for Despina-->
+            <div class="reg start_hide" id='Despina'>
+                <iframe src="https://docs.google.com/forms/d/1QSb9NY3dQe4nPlXRliTJbTGnUVXiCzENAABq4zogi3k/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for Styliana-->
+            <div class="reg start_hide" id='Styliana'>
+                <iframe src="https://docs.google.com/forms/d/1cV60km6Pis1K3VDsu4UuVNGHmbFoJ-ohTWV6yMaD2dk/viewform?embedded=true" width="720" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for Simona-->
+            <div class="reg start_hide" id='Simona'>
+                <iframe src="https://docs.google.com/forms/d/1Xlk2UpG_m0KfbhaKJkREKrdEbl8V20ErJmCNUZ9AhbQ/viewform?embedded=true" width="720" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <!--Form for Vicki-->
+            <div class="reg start_hide" id='Vicki'>
+                <iframe src="https://docs.google.com/forms/d/1YcHcfgR-BjpEik-LwBkuPpp3b2F8zQi3YZywZ1Yg11I/viewform?embedded=true" width="720" height="1250" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </div>
+
+        <!--
+        <div class="post post1">
+            <div class="buttons">
+                <h2>Παρουσίαση για εξετάσεις Cambridge</h2>
+                <button onclick='slide("Συμμετοχή");$(this).toggleClass("button_active")'>Συμμετοχή</button>
+            </div>
+            <div class="reg start_hide" id = 'Συμμετοχή'>    
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_GfiKB1dTmAJHtv-isyyPCXwHIjRfrB9_aItK1-38vJ81eg/viewform?embedded=true" width="720" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </div>
+        -->
+
+        <div class="post post1">
+            <div class="buttons">
+                <h2>Ημερομηνίες για εξετάσεις Cambridge.</h2>
+                <button onclick='slide("Starters");$(this).toggleClass("button_active")'>Starters</button>
+                <button onclick='slide("Movers");$(this).toggleClass("button_active")'>Movers</button>
+                <button onclick='slide("Flyers");$(this).toggleClass("button_active")'>Flyers</button>
+                <button onclick='slide("KET");$(this).toggleClass("button_active")'>KET</button>
+                <button onclick='slide("PET");$(this).toggleClass("button_active")'>PET</button>
+                <button onclick='slide("FCE");$(this).toggleClass("button_active")'>FCE</button>
+            </div>
+            <div class="reg start_hide" id='Starters'>
+                <h3>Starters exams: Tuesday morning, June 27th, 2017</h3>
+            </div>
+            <div class="reg start_hide" id='Movers'>
+                <h3>Movers exams: Wednesday morning, June 28th, 2017</h3>
+            </div>
+            <div class="reg start_hide" id='Flyers'>
+                <h3>Flyers exams: Thursday morning, June 29th, 2017</h3>
+            </div>
+            <div class="reg start_hide" id='KET'>
+                <h3>KET (Speaking) exams: Friday, June 23rd, 2017</h3>
+                <h3>KET (Reading, Writing, Listening): Saturday, June 24th, 2017</h3>
+            </div>
+            <div class="reg start_hide" id='PET'>
+                <h3>PET (Speaking) exams: Friday, June 23rd, 2017</h3>
+                <h3>PET (Reading, Writing, Listening) exams: Saturday, June 24th, 2017</h3>
+                <h3>_ </h3>
+                <h3>PET Fall exams: Saturday, October 7th, 2017</h3>
+            </div>
+            <div class="reg start_hide" id='FCE'>
+                <h3>FCE (Speaking) exams: Friday, June 30rd, 2017</h3>
+                <h3>FCE (Reading, Writing, Listening) exams: Saturday, July 1st, 2017</h3>
+                <h3>_ </h3>
+                <h3>FCE Fall exams: Saturday, November 28th, 2017</h3>
+            </div>
+        </div>
+    </div>
+    <!--=================FOOTER======================-->
+    <div class="footer">
+        <div class="size">
+            <div class="post fpost">
+                <a title="Cambridge Examinations" href="http://www.cie.org.uk/" target="_blank">
+                    <img src="src/Cambridge ESOL logo.jpg" alt="" height="80px" />
+                </a>
+            </div>
+            <div class="post fpost">
+                <a title="British Council " href="http://www.britishcouncil.org/cyprus.htm" target="_blank">
+                    <img src="src/British Council.jpg" alt="" height="80px" />
+                </a>
+            </div>
+            <div class="post fpost">
+                <a title="ECDL" href="http://www.ECDL.org/" target="_blank">
+                    <img src="src/top_logo.jpg" alt="" height="80px" />
+                </a>
+            </div>
+            <div class="post fpost">
+                <a title="Cyprus Computer Society" href="https://www.ccs.org.cy/" target="_blank">
+                    <img src="src/ccs new logo.jpg" alt="" height="80px" />
+                </a>
+            </div>
+            <div class="post fpost">
+                <a title="European Commision - Education &amp; Training " href="http://ec.europa.eu/education/index_en.htm" target="_blank">
+                    <img src="src/eu_com_logo.jpg" alt="" height="80px" />
+                </a>
+            </div>
+            <div class="post fpost">
+                <a title="Council of Europe" href="http://www.coe.int/t/dg4/linguistic/cadre1_en.asp" target="_blank">
+                    <img src="src/COE-Logo-Quadri.jpg" alt="" height="80px" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
