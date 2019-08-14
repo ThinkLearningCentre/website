@@ -1,131 +1,186 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Think</title>
     <link rel="shortcut icon" href="../src/Think.ico" />
-    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="../script.js"></script>
     <style type="text/css">
-        /*===OVERIDE POST===*/
-        .years a{
-            color: black;
+      /*===OVERIDE POST===*/
+      .years a {
+        color: black;
+      }
+      .years ul {
+        padding-left: 20%;
+      }
+      @media screen and (max-width: 1097px) {
+        .current {
+          float: right;
+          width: 73%;
+          padding: 0;
         }
-        .years ul{
-            padding-left: 20%;
+        .years {
+          float: left;
+          width: 23%;
+          margin-right: 0;
+          margin-left: 0;
+          padding: 1%;
         }
-        @media screen and (max-width: 1097px) {
-            .current{
-                float:right;
-                width: 73%;
-                padding: 0;
-            }
-            .years{
-                float:left;
-                width: 23%;
-                margin-right: 0;
-                margin-left: 0;
-                padding: 1%;
-            }
+      }
+      @media screen and (min-width: 1097px) {
+        .current {
+          float: right;
+          width: 830px;
+          padding: 10px;
         }
-         @media screen and (min-width: 1097px) {
-            .current{
-                float:right;
-                width: 830px;
-                padding: 10px;
-            }
-            .years{
-                float:left;
-                width: 220px;
-                margin-right: 0;
-                margin-left: 0;
-                padding: 0;
-            }
-        }  
+        .years {
+          float: left;
+          width: 220px;
+          margin-right: 0;
+          margin-left: 0;
+          padding: 0;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-<!--====================HEADER===================-->
+  <body>
+    <!--====================HEADER===================-->
     <header>
-        <div class = "top_bar">
-            <img src="../src/think_header.jpg">
-            <a href="../home.html" title=""><img style="position:absolute; left:2%; top:10%; z-index: 2; width:15%;" src="../src/THINK-Logo-Vector-Animated.gif"></a>
-            <div class="social">
-                <a href="https://www.facebook.com/ThinkLearningCentre" target="_blank"><img src="../src/social/facebook.png"></a>
-                <a href="https://twitter.com/ThinkLC" target="_blank"><img src="../src/social/twitter.png"></a>
-                <a href="https://www.linkedin.com/company/ans-gnosis-ltd" target="_blank"><img src="../src/social/linkedin.png"></a>
-            </div>
+      <div class="top_bar">
+        <img src="../src/think_header.jpg" />
+        <a href="../home.html" title=""
+          ><img
+            style="position:absolute; left:2%; top:10%; z-index: 2; width:15%;"
+            src="../src/THINK-Logo-Vector-Animated.gif"
+        /></a>
+        <div class="social">
+          <a href="https://www.facebook.com/ThinkLearningCentre" target="_blank"
+            ><img src="../src/social/facebook.png"
+          /></a>
+          <a href="https://twitter.com/ThinkLC" target="_blank"
+            ><img src="../src/social/twitter.png"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/ans-gnosis-ltd"
+            target="_blank"
+            ><img src="../src/social/linkedin.png"
+          /></a>
         </div>
-        <div id="nav_stay">
-            <div class="nav" id="nav_main">
-                <ul>
-                    <li id="nav_main_1"><a href="../home.html" title="">Home</a></li>
-                    <li id="nav_main_2"><a href="../aboutus.html" title="">About Us</a></li>
-                    <li id="nav_main_3"><a href="../curriculum.html" title="">Curriculum</a></li>
-                    <li id="nav_main_4"><a class="active" href="../exams.html" title="">Exams</a></li>
-                    <li id="nav_main_5"><a href="../calendar.html" title="">Calendar</a></li>
-                    <li id="nav_main_6"><a href="../gallery.html" title="">Gallery</a></li>
-                    <li id="nav_main_7"><a href="../contactus.html" title="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="nav_curriculum_active">
-                <div class="size">
-                    <ul style="text-align:center; margin-left:0;">
-                        <li><a href="registration.html" title="">Registration</a></li>
-                        <li><a href="preparation.html" title="">Preparation</a></li>
-                        <li><a class="active" style="background-color: #ff8000; color:black;" href="results.html" title="">Results</a></li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div id="nav_stay">
+        <div class="nav" id="nav_main">
+          <ul>
+            <li id="nav_main_1"><a href="../home.html" title="">Home</a></li>
+            <li id="nav_main_2">
+              <a href="../aboutus.html" title="">About Us</a>
+            </li>
+            <li id="nav_main_3">
+              <a href="../curriculum.html" title="">Curriculum</a>
+            </li>
+            <li id="nav_main_4">
+              <a class="active" href="../exams.html" title="">Exams</a>
+            </li>
+            <li id="nav_main_5">
+              <a href="../calendar.html" title="">Calendar</a>
+            </li>
+            <li id="nav_main_6">
+              <a href="../gallery.html" title="">Gallery</a>
+            </li>
+            <li id="nav_main_7">
+              <a href="../contactus.html" title="">Contact Us</a>
+            </li>
+          </ul>
         </div>
+        <div class="nav_curriculum_active">
+          <div class="size">
+            <ul style="text-align:center; margin-left:0;">
+              <li><a href="registration.html" title="">Registration</a></li>
+              <li><a href="preparation.html" title="">Preparation</a></li>
+              <li>
+                <a
+                  class="active"
+                  style="background-color: #ff8000; color:black;"
+                  href="results.html"
+                  title=""
+                  >Results</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-<!--=================BODY========================-->
+    <!--=================BODY========================-->
 
     <div class="page">
-        <div class= "post" >
-            <img style="width:100%" src="../src/our results.jpg">
-        </div>
-        <div class="post years">
-            <h1 style="text-align: center;">Past Exam Resutls</h1>
+      <div class="post">
+        <img style="width:100%" src="../src/our results.jpg" />
+      </div>
+      <div class="post years">
+        <h1 style="text-align: center;">Past Exam Results</h1>
+        <ul>
+          <li>
+            2018-19
             <ul>
-                <li>2018-19
-                    <ul>
-                        <li><a href="#" target="_blank">English</a></li>
-<!--                        <li><a href="">French</a></li>
+              <li><a href="#" target="_blank">English</a></li>
+              <!--                        <li><a href="">French</a></li>
                         <li><a href="">Computers</a></li> -->
-                    </ul>
-                </li>
-                <li>2017-18
-                    <ul>
-                        <li><a href="../src/Exams/2018/results.jpg" target="_blank">English</a></li>
-<!--                        <li><a href="">French</a></li>
+            </ul>
+          </li>
+          <li>
+            2017-18
+            <ul>
+              <li>
+                <a href="../src/Exams/2018/results.jpg" target="_blank"
+                  >English</a
+                >
+              </li>
+              <!--                        <li><a href="">French</a></li>
                         <li><a href="">Computers</a></li> -->
-                    </ul>
-                </li>
-                <li>2016-17
-                    <ul>
-                        <li><a href="../src/Exams/2017/results.pdf" target="_blank">English</a></li>
-<!--                        <li><a href="">French</a></li>
+            </ul>
+          </li>
+          <li>
+            2016-17
+            <ul>
+              <li>
+                <a href="../src/Exams/2017/results.pdf" target="_blank"
+                  >English</a
+                >
+              </li>
+              <!--                        <li><a href="">French</a></li>
                         <li><a href="">Computers</a></li> -->
-                    </ul>
-                </li>
-                <li>2015-16
-                    <ul>
-                        <li><a href="../src/Exams/2016/Exams Results 2016.pdf" target="_blank">English</a></li>
-<!--                        <li><a href="">French</a></li>
+            </ul>
+          </li>
+          <li>
+            2015-16
+            <ul>
+              <li>
+                <a
+                  href="../src/Exams/2016/Exams Results 2016.pdf"
+                  target="_blank"
+                  >English</a
+                >
+              </li>
+              <!--                        <li><a href="">French</a></li>
                         <li><a href="">Computers</a></li> -->
-                    </ul>
-                </li>
-                <li>2014-15
-                    <ul>
-                        <li><a href="../src/YLE Exams Results 2015.pdf" target="_blank">English</a></li>
-<!--                        <li><a href="">French</a></li>
+            </ul>
+          </li>
+          <li>
+            2014-15
+            <ul>
+              <li>
+                <a href="../src/YLE Exams Results 2015.pdf" target="_blank"
+                  >English</a
+                >
+              </li>
+              <!--                        <li><a href="">French</a></li>
                         <li><a href="">Computers</a></li> -->
-                    </ul>
-                </li>
-<!--                <li>2013-14
+            </ul>
+          </li>
+          <!--                <li>2013-14
                     <ul>
                         <li><a href="">English</a></li>
                         <li><a href="">French</a></li>
@@ -153,82 +208,222 @@
                         <li><a href="">Computers</a></li>
                     </ul>
                 </li> -->
-            </ul>
-        </div>
-        <div class="post current" id="2018-2019">
-                <h1 style="text-align: center;">2018-19 English results</h1>
-                <a href="../src/Exams/2019/1.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/1.png" /></a>
-                <a href="../src/Exams/2019/2.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/2.jpg" /></a>
-                <a href="../src/Exams/2019/3.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/3.jpg" /></a>
-                <a href="../src/Exams/2019/4.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/4.jpg" /></a>
-                <a href="../src/Exams/2019/5.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/5.jpg" /></a>
-                <a href="../src/Exams/2019/6.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/6.jpg" /></a>
-                <a href="../src/Exams/2019/7.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2019/7.jpg" /></a>
-            </div>
-        <div class="post current" id="2017-2018">
-            <h1 style="text-align: center;">2017-18 English results</h1>
-            <a href="../src/Exams/2018/results.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2018/results.jpg" /></a>
-        </div>
-        <div class="post current" id="2016-2017">
-            <h1 style="text-align: center;">2016-17 English results</h1>
-            <a href="../src/Exams/2017/4.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2017/4.jpg" /></a>
-            <a href="../src/Exams/2017/5.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2017/5.jpg" /></a>
-            <a href="../src/Exams/2017/2.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2017/2.jpg" /></a>
-            <a href="../src/Exams/2017/3.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2017/3.jpg" /></a>
-            <a href="../src/Exams/2017/1.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2017/1.png" /></a>
-        </div>
-        <div class="post current" id="2015-2016">
-            <h1 style="text-align: center;">2015-16 English results</h1>
-            <a href="../src/Exams/2016/2016 Results KET.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/2016 Results KET.jpg" /></a>
-            <a href="../src/Exams/2016/2016 Results PET.jpg" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/2016 Results PET.jpg" /></a>
-            <a href="../src/Exams/2016/Cam rwl.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/Cam rwl.png" /></a>
-            <a href="../src/Exams/2016/Cam s.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/Cam s.png" /></a>
-            <a href="../src/Exams/2016/starters.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/starters.png" /></a>
-            <a href="../src/Exams/2016/movers.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/movers.png" /></a>
-            <a href="../src/Exams/2016/flyers.png" data-lightbox="roadtrip" data-title="KET 2016"><img class="welcome_main_img" src="../src/Exams/2016/flyers.png" /></a>
-        </div>
-        <div class="post current" id="2014-2015">
-            <h1 style="text-align: center;">2014-15 English results</h1>
-            <img class="welcome_main_img" src="../src/YLE Starers 2015 Results.jpg" />
-            <img class="welcome_main_img" src="../src/YLE Movers 2015 Results.jpg" />
-            <img class="welcome_main_img" src="../src/YLE Flyers 2015 Results.jpg" />
-            <img class="welcome_main_img" src="../src/YLE Overall.jpg" />
-        </div>
+        </ul>
+      </div>
+      <div class="post current" id="2018-2019">
+        <h1 style="text-align: center;">2018-19 English results</h1>
+        <a
+          href="../src/Exams/2019/1.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/1.png"
+        /></a>
+        <a
+          href="../src/Exams/2019/2.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/2.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/3.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/3.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/4.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/4.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/5.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/5.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/6.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/6.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/7.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/7.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2019/8.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2019/8.png"
+        /></a>
+      </div>
+      <div class="post current" id="2017-2018">
+        <h1 style="text-align: center;">2017-18 English results</h1>
+        <a
+          href="../src/Exams/2018/results.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2018/results.jpg"
+        /></a>
+      </div>
+      <div class="post current" id="2016-2017">
+        <h1 style="text-align: center;">2016-17 English results</h1>
+        <a
+          href="../src/Exams/2017/4.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2017/4.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2017/5.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2017/5.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2017/2.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2017/2.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2017/3.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2017/3.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2017/1.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2017/1.png"
+        /></a>
+      </div>
+      <div class="post current" id="2015-2016">
+        <h1 style="text-align: center;">2015-16 English results</h1>
+        <a
+          href="../src/Exams/2016/2016 Results KET.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img
+            class="welcome_main_img"
+            src="../src/Exams/2016/2016 Results KET.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2016/2016 Results PET.jpg"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img
+            class="welcome_main_img"
+            src="../src/Exams/2016/2016 Results PET.jpg"
+        /></a>
+        <a
+          href="../src/Exams/2016/Cam rwl.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2016/Cam rwl.png"
+        /></a>
+        <a
+          href="../src/Exams/2016/Cam s.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2016/Cam s.png"
+        /></a>
+        <a
+          href="../src/Exams/2016/starters.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2016/starters.png"
+        /></a>
+        <a
+          href="../src/Exams/2016/movers.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2016/movers.png"
+        /></a>
+        <a
+          href="../src/Exams/2016/flyers.png"
+          data-lightbox="roadtrip"
+          data-title="examResult"
+          ><img class="welcome_main_img" src="../src/Exams/2016/flyers.png"
+        /></a>
+      </div>
+      <div class="post current" id="2014-2015">
+        <h1 style="text-align: center;">2014-15 English results</h1>
+        <img
+          class="welcome_main_img"
+          src="../src/YLE Starers 2015 Results.jpg"
+        />
+        <img
+          class="welcome_main_img"
+          src="../src/YLE Movers 2015 Results.jpg"
+        />
+        <img
+          class="welcome_main_img"
+          src="../src/YLE Flyers 2015 Results.jpg"
+        />
+        <img class="welcome_main_img" src="../src/YLE Overall.jpg" />
+      </div>
     </div>
 
-<!--=================FOOTER======================-->
+    <!--=================FOOTER======================-->
     <div class="footer">
-        <div class="size">
-            <div class="post fpost">
-                <a title="Cambridge Examinations" href="http://www.cie.org.uk/" target="_blank">
-                        <img src="../src/Cambridge ESOL logo.jpg" alt="" height="80px" />  
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="British Council " href="http://www.britishcouncil.org/cyprus.htm" target="_blank">
-                        <img src="../src/British Council.jpg" alt="" height="80px" />     
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="ECDL" href="http://www.ECDL.org/" target="_blank">
-                        <img src="../src/top_logo.jpg" alt="" height="80px" />                    
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="Cyprus Computer Society" href="https://www.ccs.org.cy/" target="_blank">
-                        <img src="../src/ccs new logo.jpg" alt="" height="80px" />     
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="European Commision - Education &amp; Training " href="http://ec.europa.eu/education/index_en.htm" target="_blank">
-                        <img src="../src/eu_com_logo.jpg" alt="" height="80px" />      
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="Council of Europe" href="http://www.coe.int/t/dg4/linguistic/cadre1_en.asp" target="_blank">
-                        <img src="../src/COE-Logo-Quadri.jpg" alt="" height="80px" />     
-                </a>
-            </div>
+      <div class="size">
+        <div class="post fpost">
+          <a
+            title="Cambridge Examinations"
+            href="http://www.cie.org.uk/"
+            target="_blank"
+          >
+            <img src="../src/Cambridge ESOL logo.jpg" alt="" height="80px" />
+          </a>
         </div>
-    </div></body>
+        <div class="post fpost">
+          <a
+            title="British Council "
+            href="http://www.britishcouncil.org/cyprus.htm"
+            target="_blank"
+          >
+            <img src="../src/British Council.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a title="ECDL" href="http://www.ECDL.org/" target="_blank">
+            <img src="../src/top_logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="Cyprus Computer Society"
+            href="https://www.ccs.org.cy/"
+            target="_blank"
+          >
+            <img src="../src/ccs new logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="European Commision - Education &amp; Training "
+            href="http://ec.europa.eu/education/index_en.htm"
+            target="_blank"
+          >
+            <img src="../src/eu_com_logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="Council of Europe"
+            href="http://www.coe.int/t/dg4/linguistic/cadre1_en.asp"
+            target="_blank"
+          >
+            <img src="../src/COE-Logo-Quadri.jpg" alt="" height="80px" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
