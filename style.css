@@ -10,6 +10,7 @@ blue: #1533AD; 21, 51, 173
 */
 
 html{
+	height: 100%;
 	font-family: 'Oswald', sans-serif;
 }
 a{
@@ -19,6 +20,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #ccc;
+	height: 100%;
 	width: 100%;
 	overflow-y:scroll;
 }
@@ -74,7 +76,7 @@ body {
 	float: right;
 	background-color: #366753;
 	width: 100%;
-	margin-top:10px;
+	margin-top: 10px;
 	padding-top: 10px;
 	padding-bottom: 30px;
 }

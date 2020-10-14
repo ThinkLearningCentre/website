@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Think</title>
     <link rel="shortcut icon" href="src/Think.ico" />
@@ -9,27 +8,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script>
-    $(function() {
-        $('.start_hide').hide();
-    });
+      $(function () {
+        $(".start_hide").hide();
+      });
 
-    function slide(x) {
+      function slide(x) {
         if ($("#" + x).is(":hidden")) {
-            $(".reg").slideUp("slow");
-            $("button").removeClass("button_active");
-            $("#" + x).delay(100).slideDown("slow");
+          $(".reg").slideUp("slow");
+          $("button").removeClass("button_active");
+          $("#" + x)
+            .delay(100)
+            .slideDown("slow");
         } else {
-            $("#" + x).slideUp("slow");
+          $("#" + x).slideUp("slow");
         }
-    }
+      }
     </script>
     <style type="text/css">
-    .buttons {
+      .buttons {
         text-align: center;
         margin-bottom: 10px;
-    }
-    
-    button {
+      }
+
+      button {
         width: 11%;
         height: 40px;
         border: 0 none;
@@ -38,176 +39,240 @@
         text-align: center;
         line-height: 1.3;
         font-size: 1.1em;
-        color: black;
+        color: white;
         text-transform: none;
         font-weight: 500;
         transition: all 60ms ease-in-out;
-        background-color: #4E7E6B;
-    }
-    
-    button:hover {
+        background-color: #4e7e6b;
+      }
+
+      button:hover {
         text-decoration: underline;
-    }
-    
-    .button_active {
+      }
+
+      .button_active {
         background-color: #ff8000;
-    }
-    /*===OVERIDE POST===*/
-    
-    .page {
+      }
+      /*===OVERIDE POST===*/
+
+      .page {
         margin-top: 0;
-    }
-    
-    .section {
+      }
+
+      .section {
         margin-top: 0;
-    }
-    
-    @media screen and (max-width:700px) {
+      }
+
+      @media screen and (max-width: 700px) {
         .post1 {
-            width: 90%;
-            padding: 3%;
+          width: 90%;
+          padding: 3%;
         }
         .post2 {
-            width: 90%;
-            padding: 3%;
-            margin: 2%;
+          width: 90%;
+          padding: 3%;
+          margin: 2%;
         }
-    }
-    
-    @media screen and (max-width: 1097px) and (min-width: 700px) {
+      }
+
+      @media screen and (max-width: 1097px) and (min-width: 700px) {
         .post1 {
-            float: left;
-            width: 70%;
-            padding: 3%;
+          float: left;
+          width: 70%;
+          padding: 3%;
         }
         .post2 {
-            float: right;
-            width: 20%;
-            margin-left: 2%;
-            padding: 1%;
+          float: right;
+          width: 20%;
+          margin-left: 2%;
+          padding: 1%;
         }
-    }
-    
-    @media screen and (min-width: 1097px) {
+      }
+
+      @media screen and (min-width: 1097px) {
         .post1 {
-            width: 700px;
-            margin-left: 0;
-            float: left;
+          width: 700px;
+          margin-left: 0;
+          float: left;
         }
         .post2 {
-            width: 200px;
-            float: right;
-            margin-bottom: 10px;
+          width: 200px;
+          float: right;
+          margin-bottom: 10px;
         }
         .home_fix {
-            margin-bottom: 10px;
+          margin-bottom: 10px;
         }
-    }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--====================HEADER===================-->
     <header>
-        <div class="top_bar">
-            <img src="src/think_header.jpg">
-            <a href="home.html" title=""><img style="position:absolute; left:2%; top:10%; z-index: 2; width:15%;" src="src/THINK-Logo-Vector-Animated.gif"></a>
-            <div class="social">
-                <a href="https://www.facebook.com/ThinkLearningCentre" target="_blank"><img src="src/social/facebook.png"></a>
-                <a href="https://twitter.com/ThinkLC" target="_blank"><img src="src/social/twitter.png"></a>
-                <a href="https://www.linkedin.com/company/ans-gnosis-ltd" target="_blank"><img src="src/social/linkedin.png"></a>
-            </div>
+      <div class="top_bar">
+        <img src="src/think_header.jpg" />
+        <a href="home.html" title=""
+          ><img
+            style="
+              position: absolute;
+              left: 2%;
+              top: 10%;
+              z-index: 2;
+              width: 15%;
+            "
+            src="src/THINK-Logo-Vector-Animated.gif"
+        /></a>
+        <div class="social">
+          <a href="https://www.facebook.com/ThinkLearningCentre" target="_blank"
+            ><img src="src/social/facebook.png"
+          /></a>
+          <a href="https://twitter.com/ThinkLC" target="_blank"
+            ><img src="src/social/twitter.png"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/ans-gnosis-ltd"
+            target="_blank"
+            ><img src="src/social/linkedin.png"
+          /></a>
         </div>
-        <div id="nav_stay">
-            <div id="home_fix">
-                <div id="nav_margin">
-                    <div class="nav" id="nav_main">
-                        <ul>
-                            <li id="nav_main_1"><a class="active" href="home.html" title="">Home</a></li>
-                            <li id="nav_main_2"><a href="aboutus.html" title="">About Us</a></li>
-                            <li id="nav_main_3"><a href="curriculum.html" title="">Curriculum</a></li>
-                            <li id="nav_main_4"><a href="exams.html" title="">Exams</a></li>
-                            <li id="nav_main_5"><a href="calendar.html" title="">Calendar</a></li>
-                            <li id="nav_main_6"><a href="gallery.html" title="">Gallery</a></li>
-                            <li id="nav_main_7"><a href="contactus.html" title="">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav_curriculum" id="nav_curriculum">
-                        <div class="size">
-                            <ul>
-                                <li id="nav_curriculum_1"><a href="curriculum/english.html" title="">English</a></li>
-                                <li id="nav_curriculum_2"><a href="curriculum/french.html" title="">French</a></li>
-                                <li id="nav_curriculum_3"><a href="curriculum/computers.html" title="">Computers</a></li>
-                                <li id="nav_curriculum_4"><a href="curriculum/private.html" title="">Private</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="nav_curriculum" id="nav_exams">
-                        <div class="size">
-                            <ul style="text-align:center; margin-left:0;">
-                                <li><a href="Exams/registration.html" title="">Registration</a></li>
-                                <li><a href="Exams/preparation.html" title="">Preparation</a></li>
-                                <li><a href="Exams/results.html" title="">Results</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div id="nav_stay">
+        <div id="home_fix">
+          <div id="nav_margin">
+            <div class="nav" id="nav_main">
+              <ul>
+                <li id="nav_main_1">
+                  <a class="active" href="home.html" title="">Home</a>
+                </li>
+                <li id="nav_main_2">
+                  <a href="aboutus.html" title="">About Us</a>
+                </li>
+                <li id="nav_main_3">
+                  <a href="curriculum.html" title="">Curriculum</a>
+                </li>
+                <li id="nav_main_4"><a href="exams.html" title="">Exams</a></li>
+                <li id="nav_main_5">
+                  <a href="calendar.html" title="">Calendar</a>
+                </li>
+                <li id="nav_main_6">
+                  <a href="gallery.html" title="">Gallery</a>
+                </li>
+                <li id="nav_main_7">
+                  <a href="contactus.html" title="">Contact Us</a>
+                </li>
+              </ul>
             </div>
+            <div class="nav_curriculum" id="nav_curriculum">
+              <div class="size">
+                <ul>
+                  <li id="nav_curriculum_1">
+                    <a href="curriculum/english.html" title="">English</a>
+                  </li>
+                  <li id="nav_curriculum_2">
+                    <a href="curriculum/french.html" title="">French</a>
+                  </li>
+                  <li id="nav_curriculum_3">
+                    <a href="curriculum/computers.html" title="">Computers</a>
+                  </li>
+                  <li id="nav_curriculum_4">
+                    <a href="curriculum/private.html" title="">Private</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav_curriculum" id="nav_exams">
+              <div class="size">
+                <ul style="text-align: center; margin-left: 0;">
+                  <li>
+                    <a href="Exams/registration.html" title="">Registration</a>
+                  </li>
+                  <li>
+                    <a href="Exams/preparation.html" title="">Preparation</a>
+                  </li>
+                  <li><a href="Exams/results.html" title="">Results</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <!--=================BODY========================-->
     <div class="page">
-        <div class="post post1">
-            <h1>Νέα και δραστηριότητες</h1>
+      <div class="post post1">
+        <h1>Νέα και δραστηριότητες</h1>
+      </div>
+      <div class="post post2">
+        <a
+          href="home.html"
+          style="text-decoration: none; color: black; text-decoration: none;"
+        >
+          <img src="src/home-icon.jpg" width="100%" />
+          <h1 style="text-align: center;">Home</h1>
+        </a>
+      </div>
+      <div class="post post1">
+        <h1>Αποτελέσματα εξετάσεων 2020</h1>
+        <div class="buttons">
+          <a href="/Exams/Results"><button>Results</button></a>
         </div>
-        <div class="post post2">
-            <a href="home.html" style="text-decoration: none; color: black; text-decoration:none">
-                <img src="src/home-icon.jpg" width="100%">
-                <h1 style="text-align:center;">Home</h1>
-            </a>
-        </div>
-        <div class="post post1">
-            <h1>Αποτελέσματα εξετάσεων 2019</h1>
-            <div class="buttons">
-                <a href="/Exams/Results"><button>Results</button></a>
-            </div>
-        </div>
+      </div>
     </div>
     <!--=================FOOTER======================-->
     <div class="footer">
-        <div class="size">
-            <div class="post fpost">
-                <a title="Cambridge Examinations" href="http://www.cie.org.uk/" target="_blank">
-                    <img src="src/Cambridge ESOL logo.jpg" alt="" height="80px" />
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="British Council " href="http://www.britishcouncil.org/cyprus.htm" target="_blank">
-                    <img src="src/British Council.jpg" alt="" height="80px" />
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="ECDL" href="http://www.ECDL.org/" target="_blank">
-                    <img src="src/top_logo.jpg" alt="" height="80px" />
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="Cyprus Computer Society" href="https://www.ccs.org.cy/" target="_blank">
-                    <img src="src/ccs new logo.jpg" alt="" height="80px" />
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="European Commision - Education &amp; Training " href="http://ec.europa.eu/education/index_en.htm" target="_blank">
-                    <img src="src/eu_com_logo.jpg" alt="" height="80px" />
-                </a>
-            </div>
-            <div class="post fpost">
-                <a title="Council of Europe" href="http://www.coe.int/t/dg4/linguistic/cadre1_en.asp" target="_blank">
-                    <img src="src/COE-Logo-Quadri.jpg" alt="" height="80px" />
-                </a>
-            </div>
+      <div class="size">
+        <div class="post fpost">
+          <a
+            title="Cambridge Examinations"
+            href="http://www.cie.org.uk/"
+            target="_blank"
+          >
+            <img src="src/Cambridge ESOL logo.jpg" alt="" height="80px" />
+          </a>
         </div>
+        <div class="post fpost">
+          <a
+            title="British Council "
+            href="http://www.britishcouncil.org/cyprus.htm"
+            target="_blank"
+          >
+            <img src="src/British Council.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a title="ECDL" href="http://www.ECDL.org/" target="_blank">
+            <img src="src/top_logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="Cyprus Computer Society"
+            href="https://www.ccs.org.cy/"
+            target="_blank"
+          >
+            <img src="src/ccs new logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="European Commision - Education &amp; Training "
+            href="http://ec.europa.eu/education/index_en.htm"
+            target="_blank"
+          >
+            <img src="src/eu_com_logo.jpg" alt="" height="80px" />
+          </a>
+        </div>
+        <div class="post fpost">
+          <a
+            title="Council of Europe"
+            href="http://www.coe.int/t/dg4/linguistic/cadre1_en.asp"
+            target="_blank"
+          >
+            <img src="src/COE-Logo-Quadri.jpg" alt="" height="80px" />
+          </a>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
